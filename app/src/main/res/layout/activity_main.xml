@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:shadowColor="@color/black"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NAME THE CELEBRITY ON THE PICTURE"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColorHighlight="@color/white"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+
+        android:id="@+id/images"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/choice1"
+            android:background="#65FFFFFF"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="choice1"
+            android:layout_weight="1"
+            android:text="Mr Willies" />
+
+        <Button
+            android:id="@+id/choice2"
+            android:background="#65FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="choice2"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Mr Adkins" />
+
+
+        <Button
+            android:id="@+id/choice3"
+            android:layout_margin="5dp"
+            android:onClick="choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#65FFFFFF"
+            android:text="Mr Statham" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+
+
+        android:id="@+id/sum"
+        android:onClick="sum"
+        android:background="#65FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="score" />
+
+
+</LinearLayout>
